@@ -37,7 +37,8 @@ h1, h3 {
   background-repeat: no-repeat;
   border-style: solid;
   /* transition will set a duration for transform */
-  transition: transform 30s;
+  transition: transform 1s;
+  /* transition: all 1s; */
 }
 
 #pizza:hover {
@@ -46,6 +47,8 @@ h1, h3 {
   /* size != scale! scaling up only blows up the existing image */
   width: 350px;
   /* chaining transforms requires no commas, just remember to end with a semicolon. */
+  -webkit-transform: rotate3d(0, 1, 1, 360deg) translateY(50px) scale(1.5);
+  -ms-transform: rotate3d(0, 1, 1, 360deg) translateY(50px) scale(1.5);
   transform: rotate3d(0, 1, 1, 360deg) translateY(50px) scale(1.5);
 }
 
@@ -75,6 +78,8 @@ h1, h3 {
   background-size: contain;
   z-index: 1;
   /* this blows up the pizza, from its current center on the page */
+  -ms-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
   transform: scale(1.6);
 }
 
