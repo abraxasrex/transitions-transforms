@@ -7,7 +7,7 @@ function addAClass(event){
 // for each square...
 for(var i = 0; i < squares.length; i++){
   squares[i].addEventListener('click', addAClass);
-  if(i < 31 ) {
+  if(i < 30 ) {
     squares[i].textContent = i + 1;
   }
 }
