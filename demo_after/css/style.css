@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+body {
+  transition: all 5s;
+}
+body:hover {
+  transform: translateX(-100%);
+}
+
 header {
   width: 100%;
   margin-top: 25px;
@@ -37,8 +44,7 @@ h1, h3 {
   background-repeat: no-repeat;
   border-style: solid;
   /* transition will set a duration for transform */
-  transition: transform 1s;
-  /* transition: all 1s; */
+  transition: all 1s;
 }
 
 #pizza:hover {
@@ -83,16 +89,7 @@ h1, h3 {
   transform: scale(1.6);
 }
 
-/*
-.square:active{
-  background-image:url(http://i258.photobucket.com/albums/hh253/jimifunguzz/doge-so-gif.gif);
-  background-size: contain;
-} */
-
 .calendar-check {
   background-color: #A6337B;
   border-radius: 100%;
-   /*background-image:url(https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg);
-  background-size: contain; */
-  /*display: none; */
 }
