@@ -3,6 +3,14 @@
   margin: 0 auto;
 }
 
+body {
+  transition: 5s;
+}
+
+body:hover {
+ transform: translateX(-100%);
+}
+
 header {
   width: 100%;
   margin-top: 25px;
@@ -37,6 +45,13 @@ h1, h3 {
   background-size: cover;
   background-repeat: no-repeat;
   border-style: solid;
+  transition: all 1s;
+}
+
+#pizza:hover {
+    transform: rotate3d(1, 1, 1, 360deg) scale(1.5) translateY(50px);
+    width: 350px;
+    background-image:url(http://www.bellybytes.com/recipe/pizza/images/tomato-olive-pesto-pizza.jpg);
 }
 
 #calendar {
@@ -58,4 +73,14 @@ h1, h3 {
   color: black;
   text-shadow: 1px solid;
   transition: all 1s;
+}
+
+.square:hover {
+  background-color: #7CEAE2;
+  transform: scale(1.5);
+}
+
+.reservedDate {
+background-color: #A6337B;
+border-radius: 100%;
 }
